@@ -1,0 +1,23 @@
+@charset "uft-8";
+
+span{
+    margin-left: 40px;
+    border: 2px solid black;
+    justify-content: left;
+    font-size: 30px;
+    padding: 15px;
+}
+header{
+    margin-top: 40px;
+}
+body h1{
+    font-size: 30px;
+    margin-left: 100px;
+    padding-top: 50px;
+    
+}
+body{
+    padding-top: 50px;
+}
+
+

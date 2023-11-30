@@ -1,0 +1,41 @@
+@charset "uft-8";
+
+.linklist1{
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-top: 2px solid white  ;
+    border-bottom: 2px solid white;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    padding: 15px 0;
+}
+.linklist1 li span{
+    margin: 0 100px;
+}
+span:hover{
+    text-decoration: underline;
+}
+    .linklist2{
+        font-size: 80px ;
+        
+    }
+    .linklist2 li{
+        text-align: center;
+        margin-top: 40px;
+        padding: 45px;
+        border: 4px solid white;
+        width: 850px;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        border-radius: 8px;
+        color: white;
+    }
+    .linklist2 a{
+        padding: 60px;
+    }
+    body{
+        background-color: black;
+    }
+  
