@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/カード.style.css">
+    <title>学習</title>
+    </head>
+</html>
+<header>
+    <ul>
+        <li>
+            <a href="学習.html">
+                <span>学習をやめる</span>
+            </a>
+        </li>
+    </ul>
+</header>
+<body>
+    <py-script>
+        qs= [
+        {"q":"modern","a":"現代の"},
+        {"q":"metropolis","a":"大都市"},
+        {"q":"bustle","a":"喧嘩"},
+        {"q":"skyscraper","a":"超高層ビル"},
+        {"q":"army","a":"陸軍"},
+        {"q":"navy","a":"海軍"},
+        {"q":"hostage","a":"人質"},
+        {"q":"tactic","a":"戦術"},
+        {"q":"rally","a":"集会"},
+        {"q":"assassination","a":"暗殺"}
+    ]
+score=0
+
+for index in range (len(qs)):
+    
+    q=qs[index]['q']
+    
+    print("Q{0} {1}".format((index+1),q))
+
+    userinput=input("回答を入力:")
+ 
+    print("回答:{0}".format(userinput))
+     
+    if userinput.upper()==qs[index]['a']:
+        print("正解")
+        score+=1
+    else:
+        print("不正解")
+        
+print("{0}問中 {1}問正解".format(len(qs),score))
+    </py-script>
+    <!--Qに問題を入力してね-->
+    <h1>Q1 modern</h1>
+    <h1>Q2 metropolis</h1>
+    <h1>Q3 bustle</h1>
+    <h1>Q4 skyscraper</h1>
+    <h1>Q5 army</h1>
+    <h1>Q6 navy</h1>
+    <h1>Q7 hostage</h1>
+    <h1>Q8 tactic</h1>
+    <h1>Q9 rally</h1>
+    <h1>Q10 assassination</h1>
+</body>

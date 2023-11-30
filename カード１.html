@@ -1,0 +1,69 @@
+<!--50段目に移動してね-->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/カード.style.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>学習</title>
+    </head>
+</html>
+<header>
+    <ul>
+        <li>
+            <a href="学習.html">
+                <span>学習をやめる</span>
+            </a>
+        </li>
+    </ul>
+</header>
+<body>
+   
+    <py-script>
+        qs= [
+        {"q":"apple","a":"りんご"},
+        {"q":"banana","a":"バナナ"},
+        {"q":"orange","a":"オレンジ"},
+        {"q":"animal","a":"動物"},
+        {"q":"incresse","a":"を増やす"},
+        {"q":"knowledge","a":"知識"},
+        {"q":"previous","a":"前の"},
+        {"q":"ancient","a":"古代の"},
+        {"q":"enormous","a":"巨大な"},
+        {"q":"resemble","a":"に似ている"}
+
+    ]
+score=0
+
+for index in range (len(qs)):
+    
+    q=qs[index]['q']
+    
+    print("Q{0} {1}".format((index+1),q))
+
+    userinput=input("回答を入力:")
+ 
+    print("回答:{0}".format(userinput))
+     
+    if userinput.upper()==qs[index]['a']:
+        print("正解")
+        score+=1
+    else:
+        print("不正解")
+        
+print("{0}問中 {1}問正解".format(len(qs),score))
+    </py-script>
+    <!--Qに問題を入力してね-->
+    <h1>Q1 apple</h1>
+    <h1>Q2 banana</h1>
+    <h1>Q3 orenge</h1>
+    <h1>Q4 animal</h1>
+    <h1>Q5 increase</h1>
+    <h1>Q6 knowledge</h1>
+    <h1>Q7 previous</h1>
+    <h1>Q8 ancient</h1>
+    <h1>Q9 enormous</h1>
+    <h1>Q10 resemble</h1>
+</body>
